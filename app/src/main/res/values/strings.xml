@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Episodes Download Manager</string>
+    <string name="download">download</string>
+    <string name="doneDownloading">doneDownloadin</string>
+    <string name="pending_download">pending\ndownload</string>
+    <string name="Download_Service">Download Service</string>
+    <string name="download_channel">downloadChannel</string>
+    <string name="app_in_background">App is running in background</string>
+</resources>

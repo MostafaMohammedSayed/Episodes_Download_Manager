@@ -1,0 +1,68 @@
+ext {
+    toolVersions = [
+            android: [
+                    complileSdk : 31,
+                    gradlePlugin: '1.6.10',
+                    buildTools  : '7.0.4',
+                    minSdk      : 21,
+                    targetSdk   : '31'
+            ]
+    ]
+
+    libVersion = [
+            androidx   : [
+                    coreKtx            : '1.7.0',
+                    appcompat          : '1.4.0',
+                    constraintLayout   : '2.1.2',
+                    work               : '2.7.1',
+                    recyclerview       : '1.2.0',
+                    lifecycleVersion   : '2.4.0',
+                    lifecycleExtensions: '2.2.0',
+                    fragmentKtx        : '1.1.0'
+            ],
+            google     : [
+                    material: '1.4.0'
+            ],
+            test       : [
+                    junit: '4.+'
+            ],
+            androidTest: [
+                    androidxJunit: '1.1.3',
+                    espresso     : '3.4.0'
+            ],
+            rx         : [
+                    rxKotlin : '3.0.1',
+                    rxjava3  : '3.1.3',
+                    rxandroid: '3.0.0'
+            ],
+            retrofit   : [
+                    retrofit     : '2.9.0',
+                    adapterRxjava: '2.9.0'
+            ]
+
+    ]
+
+    supportDependencies = [
+            coreKtx            : "androidx.core:core-ktx:${libVersion.androidx.coreKtx}",
+            appcompat          : "androidx.appcompat:appcompat:${libVersion.androidx.appcompat}",
+            material           : "com.google.android.material:material:${libVersion.google.material}",
+            constraintLayout   : "androidx.constraintlayout:constraintlayout:${libVersion.androidx.constraintLayout}",
+            junit              : "junit:junit:${libVersion.test.junit}",
+            androidxJunit      : "androidx.test.ext:junit:${libVersion.androidTest.androidxJunit}",
+            espresso           : "androidx.test.espresso:espresso-core:${libVersion.androidTest.espresso}",
+            rxjava3            : "io.reactivex.rxjava3:rxjava:${libVersion.rx.rxjava3}",
+            rxandroid          : "io.reactivex.rxjava3:rxandroid:${libVersion.rx.rxandroid}",
+            rxKotlin           : "io.reactivex.rxjava3:rxkotlin:${libVersion.rx.rxKotlin}",
+            retrofit           : "com.squareup.retrofit2:retrofit:${libVersion.retrofit.retrofit}",
+            converterGson      : "com.squareup.retrofit2:converter-gson:${libVersion.retrofit.retrofit}",
+            adapterRxjava      : "com.squareup.retrofit2:adapter-rxjava3:${libVersion.retrofit.adapterRxjava}",
+            work               : "androidx.work:work-runtime-ktx:${libVersion.androidx.work}",
+            recyclerview       : "androidx.recyclerview:recyclerview:${libVersion.androidx.recyclerview}",
+            lifeCycle          : "androidx.lifecycle:lifecycle-runtime-ktx:${libVersion.androidx.lifecycleVersion}",
+            viewModel          : "androidx.lifecycle:lifecycle-viewmodel-ktx:${libVersion.androidx.lifecycleVersion}",
+            liveData           : "androidx.lifecycle:lifecycle-livedata-ktx:${libVersion.androidx.lifecycleVersion}",
+            lifecycleExtensions: "androidx.lifecycle:lifecycle-extensions:${libVersion.androidx.lifecycleExtensions}",
+            fragmentKtx: "androidx.fragment:fragment-ktx:${libVersion.androidx.fragmentKtx}"
+    ]
+}
+
